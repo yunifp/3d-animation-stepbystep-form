@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <!-- NAVBAR CREATION -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">About</a>
+            <a href="#">Help</a>
+            <a href="#">Contact Me</a> 
+            <!-- PERULANGAN, AKAN FUNCTION ADA DI SCRIPT.JS -->
+            <i class='bx bxs-sun' onclick="darkMode()"></i> 
+        </nav>
+    </header>
+    <!-- LOGIN FORM CREATION -->
+    <div class="background"></div>
+    <div class="container">
+        <div class="item">
+            <h2 class="logo"><i class='bx bx-shape-polygon'></i></i> DiaryBeauty</h2>
+            <div class="logo-item">
+                <img src="beautiful-woman-logo-design-inspiration-vector-23194064-removebg-preview.png" alt="">
+            </div>
+            <div class="text-item">
+                <p>Gabung ke membership kami dan dapatkan keuntungan special dari kami sebagai <span>member</span> </p>
+                <div class="social-icon">
+                    <a href="#"><i class='bx bxl-whatsapp'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="login-section">
+            <!-- header start -->
+            <div class="header">
+                <ul>
+                    <li class="active form_1_progressbar">
+                        <div>
+                            <p>1</p>
+                        </div>
+                    </li>
+                    <li class="form_2_progressbar">
+                        <div>
+                            <p>2</p>
+                        </div>
+                    </li>
+                    <li class="form_3_progressbar">
+                        <div>
+                            <p>3</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!-- header end -->
+
+            <!-- form start -->
+            <div class="form_wrap">
+                <div class="form_1 data_info">
+                    <h2>Daftar</h2>
+                    <form action="" method="post">
+                        <div class="form_container">
+                            <div class="input_wrap">
+                                <label for="email_address">Email</label>
+                                <input type="email" name="Email Address" id="email_address" placeholder="masukan email" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="password">Password</label>
+                                <input type="password" name="Password" id="password" placeholder="masukan password" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="password">Konfirmasi Password</label>
+                                <input type="password" name="Konfirmasi" id="Konfirmasi"
+                                    placeholder="konfirmasi password" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form_2 data_info" style="display: none">
+                    <h2>Daftar</h2>
+                    <form action="" method="post">
+                        <div class="form_container">
+                            <div class="input_wrap">
+                                <label for="first_name">Nama depan</label>
+                                <input type="text" name="NamaAwal" id="depan_nama" placeholder="masukan nama depan" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="last_name">nama akhir</label>
+                                <input type="text" name="namaAkhir" id="akhir_nama" placeholder="masukan nama akhir" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="user_name">tanggal lahir</label>
+                                <input type="text" name="lahir" id="lahir" placeholder="masukan tanggal lahir" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="form_3 data_info" style="display: none">
+                    <h2>Daftar</h2>
+                    <form action="" method="post">
+                        <div class="form_container">
+                            <div class="input_wrap">
+                                <label for="total_experience">Provinsi</label>
+                                <input type="text" name="Provinsi" id="Provinsi" placeholder="masukan provinsi anda" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="current_company">Kota</label>
+                                <input type="text" name="Kota" id="Kota" placeholder="masukan kota anda" />
+                            </div>
+                            <div class="input_wrap">
+                                <label for="designation">Kode promo</label>
+                                <input type="text" name="kode" id="kode" placeholder="jika ada" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+            <!-- form end -->
+
+            <!-- btns start -->
+            <div class="btns_wrap">
+                <div class="common_btns form_1_btns">
+                    <button type="button" class="btn_next">Next</button>
+                </div>
+                <div class="common_btns form_2_btns" style="display: none">
+                    <button type="button" class="btn_back">Back</button>
+                    <button type="button" class="btn_next">Next</button>
+                </div>
+                <div class="common_btns form_3_btns" style="display: none">
+                    <button type="button" class="btn_back">Back</button>
+                    <button type="submit" class="btn_done">Done</button>
+                </div>
+            </div>
+            <!-- btns end -->
+        </div>
+    </div>
+    <!-- SIGN UP FORM CREATION -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
